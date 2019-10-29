@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OverviewActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/regularPad"
+        android:background="@color/colorPrimary"
+        android:text="Overview"
+        android:textColor="@color/colorPrimaryOff"
+        android:textSize="@dimen/largeText"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="258dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimaryBlue" />
+
+        <TextView
+            android:id="@+id/finalname"
+            android:layout_width="236dp"
+            android:layout_height="match_parent"
+            android:text="Name"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/colorPrimaryBlue"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:gravity="center"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Weight"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/regularText" />
+
+        <TextView
+            android:id="@+id/weight"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="0"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/extralargeText" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="right"
+            android:text="kg"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/regularText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:gravity="center"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Height"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/regularText" />
+
+        <TextView
+            android:id="@+id/height"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="0"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/extralargeText" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="right"
+            android:text="cm"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/regularText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:gravity="center"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="BMI"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/regularText" />
+
+        <TextView
+            android:id="@+id/BMI"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="0"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/extralargeText" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="right"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/regularText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:gravity="center"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:text="Calories"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/regularText" />
+
+        <TextView
+            android:id="@+id/Calories"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="right"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="0"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/extralargeText" />
+
+        <TextView
+            android:layout_width="7dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="right"
+            android:text="kcal"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/regularText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:gravity="bottom">
+
+        <ImageButton
+            android:id="@+id/overview"
+            android:layout_width="2dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/regularPad"
+            android:src="@drawable/ico_overview_wh" />
+
+        <ImageButton
+            android:id="@+id/getStarted"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:background="@color/colorPrimaryOff"
+            android:onClick="goToRecord"
+            android:padding="@dimen/regularPad"
+            android:src="@drawable/ico_record" />
+
+        <ImageButton
+            android:id="@+id/history"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/regularPad"
+            android:src="@drawable/ico_history_wh" />
+
+    </LinearLayout>
+
+</LinearLayout>

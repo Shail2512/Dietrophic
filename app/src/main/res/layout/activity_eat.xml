@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EatActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/regularPad"
+        android:background="@color/colorPrimary"
+        android:text="@string/record"
+        android:textColor="@color/colorPrimaryOff"
+        android:textSize="@dimen/largeText"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/regularPad"
+            android:text="@string/choose_from_list"
+            android:textColor="@color/colorPrimaryOff"
+            android:textSize="@dimen/regularText" />
+
+        <Button
+            android:id="@+id/input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryOff"
+            android:padding="@dimen/regularPad"
+            android:text="@string/input_new_food"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/regularText" />
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:padding="@dimen/regularPad">-->
+
+        <!--<SearchView-->
+            <!--android:id="@+id/searchView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="30dp">-->
+        <!--</SearchView>-->
+
+    <!--</LinearLayout>-->
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"></ListView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:gravity="bottom">
+
+        <ImageButton
+            android:id="@+id/overview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:background="@color/colorPrimaryOff"
+            android:padding="@dimen/regularPad"
+            android:src="@drawable/ico_overview" />
+
+        <ImageButton
+            android:id="@+id/getStarted"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/regularPad"
+            android:src="@drawable/ico_record_wh" />
+
+        <ImageButton
+            android:id="@+id/history"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:background="@color/colorPrimaryOff"
+            android:padding="@dimen/regularPad"
+            android:src="@drawable/ico_history" />
+
+    </LinearLayout>
+
+</LinearLayout>
